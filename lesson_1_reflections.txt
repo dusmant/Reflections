@@ -1,0 +1,30 @@
+Diff is a very standard way of seeing what's the difference between the two files and see what has gone wrong
+It's not new, but i had forgotten few things, which got brushed up again...
+
+This for sure, is going to be helpful for doing git and how to do code reviews.
+
+Well, it helps a lot... If you see an issue after doing something in the code, you can always run a diff and 
+see, what had gone wrong or at least which all changes might would have introduced this new problem...
+
+Saving manually has it's benefit. Because, you can save it at a point, when the change / modification makes sense.
+But it also has the problem of, if you don't save it at logical points, then you mix it up with other changes and along with that
+you might not save a whole lot of things, if u r lazy ;)
+
+The reason, why git allows multiple files being commited or saved simultaniously is : there is always dependency in varioius code files
+And that change has changes across all the required files and is also logical one : a specfic bug fix or a specific feature development, etc...
+And git is built for coding purpose... that's why it's required
+
+Whereas googledocs... it's meant for documents, which are individual in nature and they can be saved individually, rather than being linked up with each other
+Both the cases cater to their required use cases... and they are good in their specific use cases.
+
+Q))How can you use the commands git log and git diff to view the history of files?
+Ans:
+     git log : shows the complete commit history of the repo
+git log --stat : shows each commit ID with which all files were modified... From that you can choose which file you want to track for changes and note the commit IDs.
+Then run the command : git diff <First-commit-ID> <Later-commit-ID> -- This will give the change
+If you want to check only a specific file, between those commits, you can give the file name at the end of the git diff command
+git diff <First-commit-ID> <Later-commit-ID> <file-name>
+
+Q))How might using version control make you more confident to make changes that could break something?
+Ans:
+   I can figure out problems a lot more faster and how that thing got introduced in the first place... or where it got introduced.

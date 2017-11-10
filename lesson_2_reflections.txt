@@ -1,0 +1,3 @@
+Q)) What happens when you initialize a repository? Why do you need to do it?
+
+Ans : From that point on, the files added to that repository are tracked for the changes and commits. It helps tracking coding files much better !!!
