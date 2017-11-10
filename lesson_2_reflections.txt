@@ -1,3 +1,9 @@
 Q)) What happens when you initialize a repository? Why do you need to do it?
 
 Ans : From that point on, the files added to that repository are tracked for the changes and commits. It helps tracking coding files much better !!!
+
+Q)) How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Ans : Staging area is the files those can be commited and they are kind of logically related. Whereas Working directory might have changes those
+are yet to be staged latter to be committed. Staging area gives the paltform, where all the needed and related file for a single logical operation or feature or fix
+can be committed in a single go...
