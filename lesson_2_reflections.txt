@@ -6,4 +6,18 @@ Q)) How is the staging area different from the working directory and the reposit
 
 Ans : Staging area is the files those can be commited and they are kind of logically related. Whereas Working directory might have changes those
 are yet to be staged latter to be committed. Staging area gives the paltform, where all the needed and related file for a single logical operation or feature or fix
-can be committed in a single go...
+can be committed in a single go... And those changes are kind of tested... before being actually committed
+
+Q)) How can you use the staging area to make sure you have one commit per logical change?
+
+Ans : Well, i think, you can make changes to files in the working directory : assume file1, file2 and file3 require change for logical-change1. Once they are changed, you are sure it works as expected, you add them to the staging area for commit. But in the mean while another change also needs to be done. And that require modifications in file7 and file9. Go ahead and change them in the working directory, but don't add them to the staging area. Commit the changes in the staging area to repo and then add these two to the staging area. Then you can commit. But there are situations, where let's say the 2nd logical-change would require change in file2 and file7, then you have to first commit the content in the staging area and then only begin this change to go through staging area.
+
+Q)) What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Ans : I think, if there is a new feature or a but which is going to be complex and will take a lot of time to fix or there is already a file being worked upon and 
+you need to make changes in the same file, then it's better to branch out.
+
+Q)) How do the diagrams help you visualize the branch structure?
+Ans : It helps in a pictorial way that, where are the changes and what has come in and what has not, in a way that's more easy to understand.
+
+Q)) What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+I would say, it tries it best till the point no error is introduced... After that leave it to humans ;)
