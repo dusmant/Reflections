@@ -1,3 +1,7 @@
-When would you want to use a remote repository rather than keeping all your work local?
+Q)) When would you want to use a remote repository rather than keeping all your work local?
 Ans : Possibly when i see that some usable work is already done and i would like others to try it out and probably give their inputs 
 and suggestions...
+
+Q)) Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+Ans : You might be in the middle of making some changes to make your new feature or a bug-fix to work and if the local repo is 
+automatically synched with the remote repo (by auto pull), then you don't know, which one to focus on... to fix the conflict or your own feature... It might break something on your local code and nothing might work... I would say, with the control left to the user, he/she can decide when to bring in the new changes and that way, they are ready to handle those situation at that time...
